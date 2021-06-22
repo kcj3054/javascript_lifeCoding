@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [20, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+        var sortfunc = function(a, b) {
+            return a - b;    // 양수이면 b가 a보다 낮은 이덱스로한다 오름차순ㅇ
+        }
+        console.log(numbers.sort(sortfunc));    // sortfunc가 callback함수이다, callback, 오리지널 함수를 값을 전달 하는 것으로 바꿀 수 있다 - > 콜백 (사용자에게 처리를 위임)
+    </script>
+</body>
+</html>

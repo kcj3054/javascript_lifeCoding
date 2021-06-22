@@ -1,0 +1,34 @@
+
+<!DOCTYPE html1>
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+<script  scr ="greeting.js"> </script>
+
+</head>
+
+<body>
+<script>
+var grades = {
+	'list' : {'kcj3054' : 95, 'sim' : 10},
+	'show' : function(){
+		for(var name in this.list)
+		{
+			console.log(name, this.list[name])
+		}
+		 
+		// this 함수가 소속되어 있는 객체이다 
+	}
+}	
+alert(grades['list']['kcj3054']);
+//alert(grades['show']())
+grades.show();
+
+
+</script>
+
+<!-- grades의 객체안에서 list라는 객체와 show라는 함수를 담고 있다  서로 연관되어있는데 데이터, 처리 를 묶어놓은것을 객체지향이다  -->
+</body>
+</html>

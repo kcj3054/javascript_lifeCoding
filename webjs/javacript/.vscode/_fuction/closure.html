@@ -1,0 +1,27 @@
+<!-- 클로저 : 내부함수가 외부함수의 맥ㅁ락에 접근 할 수 있는 것을 가리킨다 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //1번 예시 
+        function outter() {
+            var title = "coding everybody";
+            function inner() {
+                alert(title)     // 내부 함수 inner에서 외부의 함수의 title에 접근한다 -> 클로져 
+            }
+            inner();
+        }
+        outter();
+
+
+        //2번 예시 
+    </script>
+</body>
+</html>

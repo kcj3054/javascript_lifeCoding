@@ -1,0 +1,16 @@
+<!-- 문서에서 id는 단 하나만 등장할 수 있는 식별자이다.  -->
+<!-- id의 값을 읽고 변경하는 방법 -->
+<!DOCTYPE html>
+<body>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li id="active" class="important current">JavaScript</li>
+    </ul>
+    <script>
+       var active = document.getElementById('active');     // id가 active인 객체를 조회하고 active에 객체를 담음 
+       console.log(active.id);
+       active.id = 'deactive'
+       console.log(active.id);
+    </script>
+</body>

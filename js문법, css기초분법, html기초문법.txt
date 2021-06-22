@@ -1,0 +1,41 @@
+* js는 html을 제어한다, 정적 인것을 동적으로 한다, 
+* 웹브라우저에서 어떤 사건이 일어났는 것을 이벤트라고한다
+* js는 동적 html는 정적 js는 1 + 1 = 2 로해준다 
+* onclick은 안에 js가 오도록해야한다
+* style은 css가 온다는 것을 알려주는 구분자이다.
+-> div, span동일하지만 div는 한줄 다 먹는다 
+-> font-weight: bold;..
+//
+선택자 : id값을 주고 class안에서 해당하는 id값에 속성을 변경하면된다
+//
+class(반같은거), id(학번 같은거) : class 그룹핑하고싶은거 
+id는 식별하는것 
+class선택자가 더 포괄적이고 id선택자가 더 좁은 범위이다. 
+//
+* js에서 비교 등호는 === 3개이다  
+*  <이것은 &lt <랑 태그가 겹치니 &lt
+* <br>태그는 줄바꿈 
+//
+리펙토링 : 비효율적인 것들을 제거한다 
+//js 배열
+ex : var coworkers  = ["a", "b"];
+coworkers.push("c"); // 배열 추가 
+
+//js 반복문
+cf : <li> ->  list태그 
+ex : var list = document.querySelectorAll('a');
+a태그들을 모두 가져와서 list변수에 넣는다 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

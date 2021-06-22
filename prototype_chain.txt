@@ -1,0 +1,12 @@
+==============prototype chain ===================   
+     function Ultra() {} 
+        Ultra.prototype.ultraProp = true;
+
+        function Supuer() {}
+        Supuer.prototype = new Ultra();
+
+        function Sub(){}
+        Sub.prototype = new Supuer();
+
+        var o = new Sub();
+        console.log(o.ultraProp );

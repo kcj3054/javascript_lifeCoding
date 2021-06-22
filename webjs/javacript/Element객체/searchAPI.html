@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="marked">html</li>
+        <li>css</li>
+        <li id="active">JavaScript
+            <ul>
+                <li>JavaScript Core</li>
+                <li class="marked">DOM</li>
+                <li class="marked">BOM</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        var list = document.getElementsByClassName('marked');    // 바로 ClassName이 marked인 것으로 찾는 것과, id 안의  className으로 찾는 방법으 ㅣ차이 , 범위가 문서 전체
+        console.group('document');
+        for(var i = 0 ; i < list.length; i++) {
+            console.log(list[i].textContent);    //textContent    list[i]가 가지고있는 text 내용 출력 
+        }
+        console.groupEnd()
+
+        console.group('active')
+        var active = document.getElementById('active');
+        var list = active.getElementsByClassName('marked')    // id가 active라는 하위의 element 중에서 marked라는 이름을 가진 class 찾기 , 범위가 active 엘리먼트 하위의 marked .. 
+            console.log(list[i].textContent);
+        }
+        console.groupEnd()
+    </script>
+</body>
+</html>

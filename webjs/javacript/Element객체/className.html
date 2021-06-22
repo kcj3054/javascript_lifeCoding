@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li id="active" class="important current">JavaScript</li>
+    </ul>
+    <script>
+        var active = document.getElementById('active');
+        console.log(active.classList);  // iomportant , current 두개 다 포함 
+        console.log(active.classList.length); 
+        for(var i = 0 ; i <active.length; i++) {
+            console.log(active.classList[i]);
+        }
+        active.classList.add('important')
+        active.classList.remove('important')
+        active.classList.toggle('important')    // toggle은  on/off 스위치 역할을 한다 있으면 안하고 없으면 만들고 
+    </script>
+</body>
